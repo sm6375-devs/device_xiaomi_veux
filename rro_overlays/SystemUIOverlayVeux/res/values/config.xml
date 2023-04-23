@@ -92,4 +92,8 @@
     ignore the gaze detection package -->
     <string translatable="false" name="config_cameraProtectionExcludedPackages">com.google.android.as</string>
 
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">4</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">4</integer>
+
 </resources>
