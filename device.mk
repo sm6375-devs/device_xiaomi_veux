@@ -456,6 +456,8 @@ PRODUCT_PACKAGES += \
     init.xiaomi.rc \
     init.target.rc \
     init.batterysecret.rc \
+    init.zram-on.sh \
+    init.zram-off.sh \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \
@@ -466,6 +468,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.emmc \
     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.emmc \
     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.emmc \
+    $(LOCAL_PATH)/rootdir/etc/fstab.zram:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram \
+    $(LOCAL_PATH)/rootdir/etc/init.zram.size.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init.zram.size.rc \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
 
 # Sensors
