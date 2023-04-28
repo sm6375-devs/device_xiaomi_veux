@@ -474,6 +474,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.zram.size.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init.zram.size.rc \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
 
+# Refresh Rate
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.use_content_detection_for_refresh_rate=false
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.xiaomi-multihal \
