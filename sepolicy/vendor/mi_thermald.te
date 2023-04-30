@@ -27,3 +27,5 @@ allow mi_thermald self:capability { fsetid sys_boot chown fowner };
 allow mi_thermald self:capability2 { wake_alarm block_suspend };
 
 set_prop(mi_thermald, vendor_thermal_normal_prop)
+
+allow mi_thermald shell_exec:file { map };
