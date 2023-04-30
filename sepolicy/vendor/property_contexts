@@ -30,6 +30,13 @@ odm.ril.radio.status.           u:object_r:vendor_radio_prop:s0
 odm.ril.radio.status.sim1       u:object_r:vendor_radio_prop:s0
 odm.ril.radio.status.sim2       u:object_r:vendor_radio_prop:s0
 
+# Power
+vendor.powerhal.state                   u:object_r:vendor_power_prop:s0
+vendor.powerhal.audio                   u:object_r:vendor_power_prop:s0
+vendor.powerhal.lpm                     u:object_r:vendor_power_prop:s0
+vendor.powerhal.init                    u:object_r:vendor_power_prop:s0
+vendor.powerhal.rendering               u:object_r:vendor_power_prop:s0
+
 # Thermal
 vendor.sys.thermal.             u:object_r:vendor_thermal_normal_prop:s0
 
