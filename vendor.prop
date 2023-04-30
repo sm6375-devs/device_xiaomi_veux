@@ -324,7 +324,6 @@ ro.vendor.ril.svlte1x=false
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf.scroll_opt=true
 
 # Sensors
 persist.vendor.sensors.debug.ssc_qmi_debug=true
