@@ -1,6 +1,16 @@
 # Battery
 genfscon sysfs /devices/platform/soc/soc:qcom_wt_chg/power_supply                                                                   u:object_r:vendor_sysfs_battery_supply:s0
 
+# Display
+genfscon sysfs /devices/platform/soc/5000000.qcom,kgsl-3d0        u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw          u:object_r:sysfs_msm_subsys:s0 
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw        u:object_r:sysfs_msm_subsys:s0 
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-l3-lat         u:object_r:sysfs_msm_subsys:s0 
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu6-cpu-l3-lat           u:object_r:sysfs_msm_subsys:s0 
+genfscon sysfs /devices/platform/soc/soc:qcom,gpubw           u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,gpubw/devfreq                                         u:object_r:sysfs_msm_subsys:s0
+
+
 # Extcon sysfs
 genfscon sysfs /devices/platform/soc/1628000.qcom,msm-eud/extcon                                                                    u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/soc:rt-pd-manager/extcon                                                                       u:object_r:sysfs_extcon:s0
