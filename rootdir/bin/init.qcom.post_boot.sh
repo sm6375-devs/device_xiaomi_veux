@@ -2547,6 +2547,10 @@ case "$target" in
             # choose idle CPU for top app tasks
             echo 1 > /dev/stune/top-app/schedtune.prefer_idle
             echo 10 > /dev/stune/top-app/schedtune.boost
+            echo 1 > /dev/stune/foreground/schedtune.prefer_idle
+            echo 1 > /dev/stune/top-app/schedtune.prefer_high_cap
+            echo 1 > /dev/stune/camera-daemon/schedtune.boost
+            echo 1 > /dev/stune/camera-daemon/schedtune.prefer_high_cap
 
             # re-enable thermal & BCL core_control now
             echo 1 > /sys/module/msm_thermal/core_control/enabled
