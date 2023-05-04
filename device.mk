@@ -456,7 +456,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qti.kernel.rc \
-    init.qti.ufs.rc \
     init.xiaomi.rc \
     init.target.rc \
     init.batterysecret.rc \
@@ -484,6 +483,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.xiaomi-multihal \
+    android.frameworks.sensorservice@1.0 \
+    android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge
 
 # Service Tracker

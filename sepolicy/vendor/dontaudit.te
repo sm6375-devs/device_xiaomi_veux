@@ -1,4 +1,5 @@
 dontaudit {
   hal_camera_default
+  devicesettings_app
   rild
 } default_prop:file r_file_perms;

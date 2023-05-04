@@ -56,6 +56,11 @@
         <fqname>@1.0::IGatekeeper/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.health</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IHealth/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.ir</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -111,12 +116,11 @@
     <hal format="hidl">
         <name>android.hardware.radio.config</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.2</version>
         <interface>
             <name>IRadioConfig</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.secure_element</name>

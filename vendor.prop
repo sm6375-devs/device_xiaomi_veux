@@ -218,9 +218,6 @@ persist.vendor.qti.inputopts.enable=true
 persist.vendor.qti.inputopts.movetouchslop=0.6
 ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # FS-verity
 ro.apk_verity.mode=2
 
@@ -283,6 +280,9 @@ debug.hwui.target_cpu_time_percent=30
 # Media
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
+
+# Multi-Gen LRU
+persist.device_config.mglru_native.lru_gen_config=core
 
 # NFC
 ro.vendor.se.type=HCE,UICC
