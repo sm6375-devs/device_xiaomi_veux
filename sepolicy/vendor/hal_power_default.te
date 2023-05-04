@@ -35,8 +35,5 @@ set_prop(hal_power_default, vendor_power_prop)
 # Allow hal_power_default to use capability 21 (SYS_ADMIN)
 allow hal_power_default self:capability sys_admin;
 
-# Allow hal_power_default to use the DAC_OVERRIDE capability
-allow hal_power_default self:capability dac_override;
-
 # Allow hal_power_default to write to the clkgate_enable file in sysfs
-allow hal_power_default sysfs:file write { getattr open read write };
+allow hal_power_default sysfs:file { getattr open read write };
