@@ -245,5 +245,3 @@ done
 echo N > /sys/module/lpm_levels/parameters/sleep_disabled
 
 configure_memory_parameters
-
-setprop vendor.post_boot.parsed 1
