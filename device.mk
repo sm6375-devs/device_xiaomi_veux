@@ -159,6 +159,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.sf.blurs_are_expensive=1
 
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@3.0-service \
     android.hardware.graphics.allocator@3.0.vendor \
     vendor.display.config@1.15.vendor \
     vendor.display.config@2.0.vendor
@@ -395,6 +396,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml \
+    frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.nxp.mifare.xml
@@ -486,12 +488,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge
-
-# Service Tracker
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.0.vendor \
-    vendor.qti.hardware.servicetracker@1.1.vendor \
-    vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 30

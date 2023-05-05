@@ -51,6 +51,8 @@ function configure_zram_parameters() {
 		let zRamSizeMB=4096
 	fi
 
+	echo lz4 > /sys/block/zram0/comp_algorithm
+
 	if [ -f /sys/block/zram0/disksize ]; then
 		if [ -f /sys/block/zram0/use_dedup ]; then
 			echo 1 > /sys/block/zram0/use_dedup
@@ -116,9 +118,9 @@ echo 5 > /proc/sys/kernel/sched_ravg_window_nr_ticks
 echo 20000000 > /proc/sys/kernel/sched_task_unfilter_period
 
 # cpuset parameters
-echo 0-5 > /dev/cpuset/background/cpus
-echo 0-5 > /dev/cpuset/restricted/cpus
-echo 0-5 > /dev/cpuset/system-background/cpus
+echo 0-3 > /dev/cpuset/background/cpus
+echo 0-3 > /dev/cpuset/system-background/cpus
+echo 0-6 > /dev/cpuset/foreground/cpus
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
@@ -151,9 +153,6 @@ echo 85 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/hispeed_load
 # configure input boost settings
 echo "0:1516800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
 echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
-
-echo ":1804800 1:0 2:0 3:0 4:0 5:0 6:2016000 7:0"> /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq
-echo 400 > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms
 
 # Enable bus-dcvs
 for device in /sys/devices/platform/soc

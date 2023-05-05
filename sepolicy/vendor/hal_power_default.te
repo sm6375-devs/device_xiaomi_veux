@@ -36,3 +36,8 @@ allow hal_power_default self:capability sys_admin;
 
 # Allow hal_power_default to write to the clkgate_enable file in sysfs
 allow hal_power_default sysfs:file { getattr open read write };
+
+# Enable DT2W
+type vendor_touchfeature_device, dev_type;
+
+allow hal_power_default vendor_touchfeature_device:chr_file rw_file_perms;
