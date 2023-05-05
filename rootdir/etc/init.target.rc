@@ -115,9 +115,9 @@ on early-boot
     start vendor.sensors
 
 on boot
-    # Set xiaomi touch permissions
-    chown system system /dev/xiaomi-touch
-    chmod 0660 /dev/xiaomi-touch
+    # DT2W
+    chown system system /proc/tp_gesture
+    chmod 0644 /proc/tp_gesture
 
     write /dev/cpuset/audio-app/cpus 1-2
     # Add a cpuset for the camera daemon
