@@ -23,12 +23,13 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_veux
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO X4 Pro 5G
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := Redmi Note 11E Pro 5G
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="veux-user 12 SKQ1.211006.001 V13.0.7.0.SKCMIXM release-keys"
+    PRIVATE_BUILD_DESC="veux-user 13 TKQ1.221114.001 V14.0.1.0.TKCCNXM release-keys"
 
-BUILD_FINGERPRINT := POCO/veux_p_global/veux:12/SKQ1.211006.001/V13.0.7.0.SKCMIXM:user/release-keys
+BUILD_FINGERPRINT := 
+Redmi/veux/veux:13/TKQ1.221114.001/V14.0.1.0.TKCCNXM:user/release-keys

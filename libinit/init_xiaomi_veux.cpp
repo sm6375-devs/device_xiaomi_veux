@@ -47,7 +47,7 @@ static const variant_info_t veux_info = {
     .marketname = "Redmi Note 11E Pro",
     .model = "2201116SC",
     .name = "veux",
-    .build_fingerprint = "Redmi/veux/veux:12/SKQ1.211006.001/V13.0.4.0.SKCCNXM:user/release-keys",
+    .build_fingerprint = "Redmi/veux/veux:13/TKQ1.221114.001/V14.0.1.0.TKCCNXM:user/release-keys",
 
     .nfc = true,
 };
